@@ -14,33 +14,33 @@ Enquanto a conversão para escala de cinza pode fornecer uma representação bá
 
 Os índices de vegetação não apenas destacam a presença de vegetação, mas também fornecem informações adicionais, como densidade de clorofila, distribuição da vegetação e condições do solo. Esses dados são cruciais para tomadas de decisão informadas em agricultura, monitoramento ambiental e estudos de ecossistemas.
 
-### **Aplicação Prática: Um Exemplo de NDVI**
+### **Aplicação Prática: Um Exemplo de ExG**
 
-#### **Ilustração: Comparação Entre Escala de Cinza e NDVI**
+#### **Ilustração: Comparação Entre Escala de Cinza e ExGExG**
 
-Para ilustrar a diferença entre a abordagem tradicional e o uso de índices de vegetação, apresentamos a imagem original (à esquerda) e a mesma imagem processada com o NDVI (à direita). Observe como o NDVI destaca áreas de vegetação de forma mais clara e distintiva, evidenciando a eficácia dessa técnica.
+Para ilustrar a diferença entre a abordagem tradicional e o uso de índices de vegetação, apresentamos a imagem original (à esquerda) e a mesma imagem processada com o ExG (à direita). Observe como o ExG destaca áreas de vegetação de forma mais clara e distintiva, evidenciando a eficácia dessa técnica.
 
-![Comparação Entre Escala de Cinza e NDVI](link_para_sua_imagem_original)
+![Captura de tela 2022-04-29 092040](https://github.com/fathos82/Vegetation-Index-Computer-Vision/assets/72706252/207e1a66-e567-4bee-9c9e-bd38a69be783)
 
-#### **Implementação de Código: Cálculo do NDVI**
+
+#### **Implementação de Código: Cálculo do ExG**
 
 ```python
-import numpy as np
-import matplotlib.pyplot as plt
+def apply_indice(image, type: IndiceTypes):
+    R, G, B = cv2.split(image)
+    match type:
+        case IndiceTypes.VEG_ExG:
+            return 2 * G - R - B
+img = cv2.imread(image_paths[index])
+img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+img = cv2.GaussianBlur(img, (5, 5), 0)
+img_veg = apply_indice(img, indice_type)
 
-# Simulação de bandas espectrais (vermelha e infravermelha próxima)
-red_band = np.random.rand(100, 100)
-nir_band = np.random.rand(100, 100)
+fig, ax = plt.subplots(1, 4, figsize=(15, 5))
 
-# Cálculo do NDVI
-ndvi = (nir_band - red_band) / (nir_band + red_band)
-
-# Visualização do NDVI
-plt.imshow(ndvi, cmap='RdYlGn')
-plt.colorbar(label='NDVI')
-plt.title('Exemplo de NDVI')
-plt.axis('off')
-plt.show()
+ax[0].imshow(img_veg, cmap='gray')
+ax[0].set_title('Imagem Indexada')
+ax[0].axis('off')
 ```
 
 ### **Conclusão: Maximizando a Eficiência com Índices de Vegetação**
