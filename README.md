@@ -15,12 +15,14 @@ Enquanto a conversão para escala de cinza pode fornecer uma representação bá
 Os índices de vegetação não apenas destacam a presença de vegetação, mas também fornecem informações adicionais, como densidade de clorofila, distribuição da vegetação e condições do solo. Esses dados são cruciais para tomadas de decisão informadas em agricultura, monitoramento ambiental e estudos de ecossistemas.
 
 ### **Aplicação Prática: Um Exemplo de ExG**
+![original](https://github.com/fathos82/Vegetation-Index-Computer-Vision/assets/72706252/eaf588fc-2aed-424c-a23c-1ddaec807c93)
+
+
 
 #### **Ilustração: Comparação Entre Escala de Cinza e ExGExG**
 
-Para ilustrar a diferença entre a abordagem tradicional e o uso de índices de vegetação, apresentamos a imagem original (à esquerda) e a mesma imagem processada com o ExG (à direita). Observe como o ExG destaca áreas de vegetação de forma mais clara e distintiva, evidenciando a eficácia dessa técnica.
+Para ilustrar a diferença entre a abordagem tradicional e o uso de índices de vegetação, apresentamos a imagem em escala de cinza (à esquerda) e a mesma imagem processada com o ExG (à direita). Observe como o ExG destaca áreas de vegetação de forma mais clara e distintiva, evidenciando a eficácia dessa técnica.
 
-![Captura de tela 2022-04-29 092040](https://github.com/fathos82/Vegetation-Index-Computer-Vision/assets/72706252/207e1a66-e567-4bee-9c9e-bd38a69be783)
 
 
 #### **Implementação de Código: Cálculo do ExG**
