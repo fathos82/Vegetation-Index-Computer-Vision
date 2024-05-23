@@ -19,13 +19,17 @@ Os índices de vegetação não apenas destacam a presença de vegetação, mas 
 
 
 
+
+
 #### **Ilustração: Comparação Entre Escala de Cinza e ExG**
 
-![Imagem em Escala de Cinza](https://github.com/fathos82/Vegetation-Index-Computer-Vision/assets/72706252/46a345c7-c8b7-41d5-ab7a-012ec6bf0ca3)
+![Imagem Indexada com ExG](https://github.com/fathos82/Vegetation-Index-Computer-Vision/assets/72706252/10f5ad6e-fc98-4678-b287-256e0972a56c)
 
-![Imagem Processada com ExG](https://github.com/fathos82/Vegetation-Index-Computer-Vision/assets/72706252/10f5ad6e-fc98-4678-b287-256e0972a56c)
+![Imagem em Escala de Cinza](https://github.com/fathos82/Vegetation-Index-Computer-Vision/assets/72706252/f10fc10e-468e-48c4-b5e0-884e86e09c5c)
 
-Para ilustrar a diferença entre a abordagem tradicional e o uso de índices de vegetação, apresentamos a imagem original em escala de cinza (primeira imagem) e a mesma imagem processada com o ExG (segunda imagem). Observe como o ExG destaca áreas de vegetação de forma mais clara e distintiva, evidenciando a eficácia dessa técnica.
+Para ilustrar a diferença entre a abordagem tradicional e o uso de índices de vegetação, apresentamos a imagem original em escala de cinza (segunda imagem) e a mesma imagem processada com o ExG (primeira imagem acima). Observe como o ExG destaca áreas de vegetação de forma mais clara e distintiva, evidenciando a eficácia dessa técnica.
+
+
 
 
 #### **Implementação de Código: Cálculo do ExG**
